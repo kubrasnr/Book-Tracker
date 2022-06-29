@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:wght@400;700&display=swap');
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #0E3833;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        #header {
+            background-color: #0E3833;
+            size: 300px;
+            display: flex;
+            flex-direction: column;
+            block-size: 100%;
+        }
+        
+        h1 {
+            margin-left: 40%;
+            color: #FFB900;
+        }
+        
+        #navBar {
+            background-color: white;
+            display: flex;
+            flex: content;
+            flex-direction: row;
+            justify-content: space-around;
+            height: 50px;
+        }
+        
+        a {
+            text-decoration: none;
+            text-align: center;
+            font-size: large;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+    <div id="header">
+        <br>
+        <br>
+        <h1>BOOK TRACKER</h1>
+        <br>
+        <br>
+
+
+
+    </div>
+
+
+    <div id="navBar">
+
+        <a href="main.html">SEARCH</a>
+        <a href="myBooks.html">MY BOOKS</a>
+        <a href="contactAu.html">CONTACT & ABOUT US</a>
+    </div>
+
+    <div id="results" class="results"></div>
+
+</body>
+
+<script type="module" src="myBooks.js"></script>
+
+
+</html>

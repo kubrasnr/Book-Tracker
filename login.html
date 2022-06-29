@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Book Tracker Login Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:wght@400;700&display=swap');
+        body {
+            background-color: #0E3833;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        button {
+            box-shadow: 0 16px 18px 0 #051426, 0 17px 50px 0 #051426;
+            border-radius: 6px;
+            background-color: #FFB900;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        img {
+            width: 300px;
+        }
+        
+        input {
+            color: black;
+            box-shadow: 0 16px 18px 0 #051426, 0 17px 50px 0 #051426;
+            border-radius: 6px;
+            font-size: 12px;
+            padding: 8px;
+        }
+        
+        #container {
+            width: 50%;
+            margin: auto;
+            margin-top: 150px;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        #content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        
+        #buttons {
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <img src="./images/logo.jpg" alt="logo">
+
+        <div id="content">
+
+
+            <input type="email" id="email" placeholder="Email">
+            <div>
+                <input type="password" id="password" placeholder="Password">
+                <i class="fa fa-eye" onclick="togglePassword()" id="icon"></i>
+            </div>
+            <div id="buttons">
+                <button id="login">Login</button>
+                <button> <a href="signup.html">Sign up</a></button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function togglePassword() {
+            var element = document.getElementById('password');
+            element.type = (element.type == 'password' ? 'text' : 'password');
+        }
+    </script>
+
+</body>
+<script type="module" src="login.js"></script>
+
+</html>
